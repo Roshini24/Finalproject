@@ -1,0 +1,70 @@
+<!DOCTYPE html> 
+<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+
+        
+        <link rel="stylesheet" href="../css/main.css">
+		    <link href="../js/video-js/video-js.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="../js/video-js/video-js.css">
+     
+         <script src="../js/video-js/video.js"></script>
+        <script src="../js/video-js/video.devjs"></script>
+<html> 
+<body> 
+
+<video id="example_video_1" class="video-js vjs-default-skin"
+  controls preload="auto" width="640" height="264"
+  poster="http://video-js.zencoder.com/oceans-clip.png"
+  data-setup='{"example_option":true}'>
+ <source src="C:\Users\iwedgeadmin\Documents\GitHub\Finalproject\video\What_GIT.mp4" type='video/mp4' />
+ <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
+ <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' />
+ <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+</video>
+
+
+
+
+
+
+<div style="text-align:center"> 
+  <button onclick="playPause()">Play/Pause</button> 
+  <button onclick="makeBig()">Big</button>
+  <button onclick="makeSmall()">Small</button>
+  <button onclick="makeNormal()">Normal</button>
+  <br> 
+  <video src="C:\Users\iwedgeadmin\Documents\GitHub\Finalproject\pages\mov_bbb.mp4" width="400" height="300" preload controls>
+  </video>
+  
+  <video id="video1" width="420">
+    <source src="mov_bbb.mp4" type="video/mp4">
+    <source src="mov_bbb.ogg" type="video/ogg">
+    Your browser does not support HTML5 video.
+  </video>
+</div> 
+
+<script> 
+var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+    if (myVideo.paused) 
+        myVideo.play(); 
+    else 
+        myVideo.pause(); 
+} 
+
+function makeBig() { 
+    myVideo.width = 560; 
+} 
+
+function makeSmall() { 
+    myVideo.width = 320; 
+} 
+
+function makeNormal() { 
+    myVideo.width = 420; 
+} 
+</script> 
+
+<p>Video courtesy of <a href="http://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>.</p>
+</body> 
+</html>
