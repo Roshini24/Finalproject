@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Final project</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/main.css"> 
+		
+         <link href="../css/bootstrap.min.css" rel="stylesheet">
+         <script src="../js/respond.js"></script>
+        <script src="../js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+	<body>
+	<div class = "container">
+		<header class = "row" style = "background-color:#CCEEFF;">
+			<div class = "col-md-5 col-sm-5">
+			<h2 style = "color:white"> HTML5 BOILERPLATE </h2>
+			</div>	
+		</header>
+		<div class ="row" style = "background-color:#CCEEFF;">
+		<form id="frmhomepage" action="homepage.html">
+		<div id= "menu"  class = "col-lg-1"><input type = "submit"  value= "homepage"></div>
+		</form>
+		
+		<form  id="frmboilerplate" action="boilerplate.html">
+		<div id= "menu1"  class = "col-lg-1">
+		<input type = "submit"  value= "boilerplate"></div>
+		</form>
+			<form  id="frmAFSSSH" action="AFSSSH.html">
+		<div id= "menu2"  class = "col-lg-1"><input type = "submit"  value= "AFS/SSh"></div>
+		</form>
+			<form  id="frmGithub" action="Github.html">
+		<div id= "menu3"  class = "col-lg-1"><input type = "submit"  value= "Github"></div>
+		</form>
+			<form  id="frmcontactform" action="Contactform.html">
+		<div id= "menu4"  class = "col-lg-1"><input type = "submit"  value= "Contact form"></div>
+			</form>
+		</div>
+	<div class = "container" style = "background-color:#CCEEFF;">
+	<div class = "row">
+	<h3>Introduction to SSH</h3>
+	<p>Secure Shell is a set of protocols (commonly referred to as SSH) for secure transfer of data via insecure channels, such as TCP. SSH was initially designed as a secure replacement of Unix rsh (remote shell) application. This has caused certain specifics in various aspects of SSH protocol design and implementation, which are reviewed below</p>
+    <p>In it's features SSH is often compared to SSL/TLS. Both provide the similar functionality (securing the data exchange using asymmetric keys), however the differences are also significant.First of all, SSH expects the client to always authenticate to the server. Authentication can be done in various ways including explicit keyboard authentication.Next, SSH is quite efficient, when very small chunks of data (1-4 bytes) are sent. This is caused by the fact that SSH was created to tunnel manual typing that happens in remote shell access.Third benefit of SSH is that SSH allows to organize the so-called tunnels, i.e. independent channels of information exchange. For example you can connect to shell and MySQL server after establishing single SSH connection.And the last but not the least - SSH supports ZLib compression of transferred data, which is not available in most SSL/TLS implementations (SSLBlackbox does support compression in SSL).On the other hand, SSL is somewhat easier to understand and use. Also, SSH keys (most commonly used method of SSH authentication) are stored in different, incompatible formats; while SSL certificates have single predefined format (DER-encoded X.509 certificates and private keys).</p>
+<br>
+<br>
+<h3>SSH Basics</h3>
+<p>Without going deep into technical details, SSH connection consists of the following steps:</p>
+<ol>
+<li> Handshake.</li>
+<li> Authentication</li>
+<li> Data Exchange</li>
+</ol>
+<p>During handshake phase the sides exchange information about SSH protocol version and used cipher suites (combinations of asymmetric encryption, symmetric encryption and hashing algorithms) and compression algorithm (none/ZLib at the moment). Unlike SSL, in SSH the server sends the first data block to the client.First the server and client authenticate themselves to the other side. Server is authenticated using host key. The client is expected to store the key fingerprint somewhere and then validate the key next time (and notify the user if the fingerprint is different from the stored one). X.509 certificate can be used as a host key.  </p>
+<p>Client authentication in SSH can be done in one of the following ways:</p>
+<ol>
+<li>Public key authentication</li>
+<li>Password authentication</li>
+<li>Host-based authentication</li>
+<li>Keyboard authentication</li>
+</ol>
+<br>
+<p>Data exchange is performed if the authentication was successful. For data exchange the client or server creates and manages one or more independent logical connections (data channels). </p>
+ 
+	</div>
+<div class= "row">
+<p>Detailed instruction on how to setup your SSH key with github.</p>
+<h4>SSH setup</h4> 
+<div class = "col-md-6 col-sm-6">
+<video id="example_video_1" class="video-js vjs-default-skin"
+  controls preload="auto" width="640" height="264"
+  
+  data-setup='{"example_option":true}'>
+ <source src="C:\Users\iwedgeadmin\Documents\GitHub\Finalproject\video\SSHkey.mp4" type='video/mp4' />
+ <source src="C:\Users\iwedgeadmin\Documents\GitHub\Finalproject\video\SSHkey.webm" type='video/webm' />
+ <source src="C:\Users\iwedgeadmin\Documents\GitHub\Finalproject\video\SSHkey.ogv" type='video/ogg' />
+ <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that 
+ <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+</video>
+</div>
+</div>
+	
+	
+	 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+</body>
+</html>
