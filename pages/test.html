@@ -1,70 +1,87 @@
 <!DOCTYPE html> 
-<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+<head>
+<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Final project</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        
+       
+        <link rel="stylesheet" href="../css/normalize.css">
         <link rel="stylesheet" href="../css/main.css">
-		    <link href="../js/video-js/video-js.min.css" rel="stylesheet">
-		<link rel="stylesheet" href="../js/video-js/video-js.css">
-     
-         <script src="../js/video-js/video.js"></script>
-        <script src="../js/video-js/video.devjs"></script>
+         <link href="../css/bootstrap.min.css" rel="stylesheet">
+         <script src="../js/respond.js"></script>
+        <script src="../js/vendor/modernizr-2.6.2.min.js"></script>
+		
+	 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+</head>
 <html> 
 <body> 
 
-<video id="example_video_1" class="video-js vjs-default-skin"
-  controls preload="auto" width="640" height="264"
-  poster="http://video-js.zencoder.com/oceans-clip.png"
-  data-setup='{"example_option":true}'>
- <source src="C:\Users\iwedgeadmin\Documents\GitHub\Finalproject\video\What_GIT.mp4" type='video/mp4' />
- <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
- <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' />
- <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
-</video>
+	<nav class="navbar navbar-inverse" role="navigation">
+	  <div class="container-fluid">
+	      <!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		  </button>
+		  <a class="navbar-brand" href="#" background-color = "grey">HTML 5 Boilerplate</a>
+		</div>
 
+	  
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		  <ul class="nav navbar-nav">
+			<li class="active"><a href="homepage.html">Homepage</a></li>
+			<li><a href="boilerplate.html">Boilerplate</a></li>
+			<li><a href="AFSSSH.html">AFS/SSH</a></li>
+			<li><a href="Github.html">GitHub</a></li>
+			<li><a href="contactform.html">Contact</a></li>    
+		  </ul>
+		  <form class="navbar-form navbar-left" role="search">
+			<div class="form-group">
+			  <input type="text" class="form-control" placeholder="Search">
+			</div>
+			<button type="submit" class="btn btn-default">Search</button>
+		  </form>
+		  <ul class="nav navbar-nav navbar-right">
+			<li><a href="#">Welcome User</a></li>
+		  </ul>
+		</div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+	
+	<div class="panel panel-default">
+	  <div class="panel-heading">Panel heading without title</div>
+	  <div class="panel-body">
+		Panel content
+	  </div>
+	</div>
 
+	<div class="panel panel-default">
+	  <div class="panel-heading">
+		<h3 class="panel-title">Panel title</h3>
+	  </div>
+	  <div class="panel-body">
+		Panel content
+	  </div>
+	</div>
 
-
-
-
-<div style="text-align:center"> 
-  <button onclick="playPause()">Play/Pause</button> 
-  <button onclick="makeBig()">Big</button>
-  <button onclick="makeSmall()">Small</button>
-  <button onclick="makeNormal()">Normal</button>
-  <br> 
-  <video src="C:\Users\iwedgeadmin\Documents\GitHub\Finalproject\pages\mov_bbb.mp4" width="400" height="300" preload controls>
-  </video>
-  
-  <video id="video1" width="420">
-    <source src="mov_bbb.mp4" type="video/mp4">
-    <source src="mov_bbb.ogg" type="video/ogg">
-    Your browser does not support HTML5 video.
-  </video>
-</div> 
-
-<script> 
-var myVideo = document.getElementById("video1"); 
-
-function playPause() { 
-    if (myVideo.paused) 
-        myVideo.play(); 
-    else 
-        myVideo.pause(); 
-} 
-
-function makeBig() { 
-    myVideo.width = 560; 
-} 
-
-function makeSmall() { 
-    myVideo.width = 320; 
-} 
-
-function makeNormal() { 
-    myVideo.width = 420; 
-} 
-</script> 
-
-<p>Video courtesy of <a href="http://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>.</p>
 </body> 
 </html>

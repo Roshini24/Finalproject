@@ -15,7 +15,7 @@ button,
 input,
 select,
 textarea {
-    color: #222;
+    color: red;
 }
 
 html {
@@ -302,10 +302,11 @@ textarea {
     p,
     h2,
     h3 {
-	font-size: 12px;
-	        orphans: 3;
+	font-size: 1 em;
+	    orphans: 3;
         widows: 3;
-    }
+		text-align : justify;
+	}
 
     h2,
     h3 {
@@ -320,7 +321,7 @@ body
 	font: 85% arial, hevetica, sans-serif;
 	text-align: center;
 	color: #333;
-	background: #8D389C;
+	background-color: #8D389C;
 }
 table 
 {

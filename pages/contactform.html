@@ -19,82 +19,85 @@
          <script src="../js/respond.js"></script>
         <script src="../js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
-<body style = "background-color: #B98A5E;">	
-<div class = "container" align = "left">
 
-		<header class = "row">
-			<div class = "col-md-5 col-sm-5">
-			<h2 style = "color: white"> HTML5 BOILERPLATE </h2>
-			</div>	
-		</header>
-		<div class ="row pull right" >
-		<form id="frmhomepage" action="homepage.html">
-		<div id= "menu"  class = "col-lg-1"><input type = "submit"  value= "homepage"></div>
-		</form>
-		
-		<form  id="frmboilerplate" action="boilerplate.html">
-		<div id= "menu1"  class = "col-lg-1">
-		<input type = "submit"  value= "boilerplate"></div>
-		</form>
-			<form  id="frmAFSSSH" action="AFSSSH.html">
-		<div id= "menu2"  class = "col-lg-1"><input type = "submit"  value= "AFS/SSh"></div>
-		</form>
-			<form  id="frmGithub" action="Github.html">
-		<div id= "menu3"  class = "col-lg-1"><input type = "submit"  value= "Github"></div>
-		</form>
-			<form  id="frmcontactform" action="Contactform.html">
-		<div id= "menu4"  class = "col-lg-1"><input type = "submit"  value= "Contact form"></div>
-			</form>
-	</div>
-		<br> <br>
-	<header class = "row">
-	<div class ="col-md-6 col-sm-6">
-	<h1> Contact Us</h1> </div> 
-	</header>
-	<div class = "row">
-	<h3> &nbsp Send us your feedback </h3>
-	</div>
-	<div class = "row">
-	<div class ="col-md-6 col-sm-6">
-	<br>
-	<br>
-	<table  border = "1">
-		<tr>
-		
-		
-
-			<td>
-				<p>  &nbsp Information entered on this page will not be used to <br> &nbsp send unsolicited email, and will not be sold to a 3rd party  &nbsp</p>
-			</td>
-		
-		</tr>
-	</table>
-	</div>
-	</div>
-	<br>
-	<table>
-        <tbody>
-            <tr><td><label for="name">Your Name:</label></td><td><input id="name" type="text"></td> </tr> 
-            <tr><td><label for="email">Your Email:</label></td><td><input id="email" type = "text"></td></tr>
-            <tr><td><label for="desc">Subject:</label></td><td><input id="desc" type="text"></td></tr>
-			<tr><td><label for="name">Message:</label></td><td><input id="name" type="text" size = "35" height = "10" max= "100%"></td></tr>
-        </tbody>
-    </table>
-
-	<br>
-	<br>
-	<br>
-	<div class = "row">
-	<div class ="col-md-3 col-sm-3">
-	<p><a href ="#" class = "btn btn-danger btn-sm">Submit</a></p>
-	</div>
-	<div class ="col-md-2 col-sm-2">
-	<p><a href ="#" class = "btn btn-danger btn-sm">Cancel</a></p>
-	</div>
-	</div>
+<body>	
+	<nav class="navbar navbar-inverse" role="navigation">
+	  <div class="container-fluid">
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		  <ul class="nav navbar-nav">
+			<li ><a href="homepage.html">Home</a></li>
+			<li><a href="boilerplate.html">Boilerplate</a></li>
+			<li><a href="AFSSSH.html">AFS/SSH</a></li>
+			<li ><a href="Github.html">GitHub</a></li>
+			<li class="active"><a href="contactform.html">Contact</a></li>    
+		  </ul>
+		  <form class="navbar-form navbar-right" role="search">
+			<div class="form-group">
+			  <input type="text" class="form-control" placeholder="Search">
+			</div>
+			<button type="submit" class="btn btn-default">Search</button>
+		  </form>
+		  <ul class="nav navbar-nav navbar-right">
+			<li><a href="#">Welcome User</a></li>
+		  </ul>
+		</div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
 	
-	
-</div>		
+	<div class ="jumbotron" style = "background-color: #A0A0A0"  width= "100%" height= "100%">
+		<div class = "container">
+			 <div class="row">
+				<div class="col-md-12 col-xs-12">
+					<div class="panel panel-default">
+					  <div class="panel-heading">
+						<h3 class="panel-title" align ="left"><b>Contact Us :  </b> <font size = "2">Send us your feedback </font></h3>
+					  </div>
+					  <div class="panel-body" height ="100">
+							<table border="0" width="60%">
+								<thead>
+								  <tr>
+									<th colspan= "4"><font size = "1">Information entered on this page will not be used to send unsolicited email, and will not be sold to a 3rd party </font></th>
+								  </tr>
+								</thead>
+								<tbody>
+									<tr><td>&nbsp;</td><td align="left"><label for="name"> Name</label></td><td align="left"><input id="name" type="text"></td><td>&nbsp;</td> </tr> 
+									<tr><td>&nbsp;</td><td align="left"><label for="email">Email</label></td><td align="left"><input id="email" type = "text"></td><td>&nbsp;</td></tr>
+									<tr><td>&nbsp;</td><td align="left"><label for="desc">Subject</label></td><td align="left"><input width="50" id="desc" type="text"> <td>&nbsp;</td> </tr>
+									<tr><td>&nbsp;</td>
+										<td align="left"><label for="name">Message</label></td>
+										<td align="left">
+											<textarea rows="15" cols="50"></textarea>
+										</td><td>&nbsp;</td>
+									</tr>
+									<tr><td>&nbsp;</td><td align="left"></td><td align="left"></td><td>&nbsp;</td> </tr> 
+									<tr>
+										<td>&nbsp;</td>
+										<td> </td>
+										<td  align="left"><a href ="#" class = "btn btn-danger btn-sm">Submit</a> &nbsp;&nbsp;&nbsp;&nbsp;
+											<a href ="#" class = "btn btn-danger btn-sm">Cancel</a></td><td>&nbsp;</td>
+									</tr>										
+								</tbody>
+							</table>
+					  </div>
+					</div>
+				</div>
+			</div>
+			<div class = "row">
+				<div class="col-md-12 col-xs-12">
+					<div class="panel panel-default">
+					  <div class="panel-footer">
+						<a href="#"><font size = "1">@ Copyright 2014 Roshini , All Rights Reserved </font> </a>&nbsp
+						<a href="#"><font size = "1">Inc.Terms</font> </a>&nbsp
+						<a href="#"><font size = "1">Privacy</font> </a>&nbsp
+						<a href="#"><font size = "1">Security</font> </a>&nbsp
+						<a href="#"><font size = "1">Contact</font> </a>
+					  </div>
+					</div>
+				</div>
+			</div>			
+		</div>
+	</div>
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
