@@ -73,81 +73,87 @@
 					</div>
 				</div>
 				<div class = "row">
-					<div class = "col-md-6 col-sm-6">
+					<div class="col-md-12 col-xs-12">
 						<div class="panel panel-default">
-							<!-- Default panel contents -->
-							<div class="panel-heading">Client Authentication in SSH</div>
 							<div class="panel-body">
-							<p align = "justify"><font size = "2">	During handshake phase the sides exchange information about SSH protocol version and used cipher suites (combinations of asymmetric encryption, symmetric encryption and hashing algorithms) and compression algorithm (none/ZLib at the moment). Unlike SSL, in SSH the server sends the first data block to the client.First the server and client authenticate themselves to the other side. Server is authenticated using host key. The client is expected to store the key fingerprint somewhere and then validate the key next time (and notify the user if the fingerprint is different from the stored one). X.509 certificate can be used as a host key.  </p>
-																<p align = "justify"><font size = "2">>Client authentication in SSH can be done in one of the following ways:</p></font></p>
-							</div>
-							<!-- Table -->
-							<table class="table" border="0">
-								  <tr>
-									<td align ="left" width ="3%">1</td>
-									<td align ="left"  width ="97%">Public key authentication</td>
-								  </tr>
-								  <tr>
-									<td align ="left">2</td>
-									<td align ="left">Password authentication</td>
-								  </tr>
-								  <tr>
-									<td align ="left">3</td>
-									<td align ="left">Host-based authentication</td>
-								  </tr>
-																	  <tr>
-									<td align ="left">4</td>
-									<td align ="left">Keyboard authentication</td>
-								  </tr>
-							</table>
-							<div class="panel-footer"><font size="2" align="justify">Data exchange is performed if the authentication was successful. For data exchange the client or server creates and manages one or more independent logical connections (data channels).</font>
-							</div>
-						</div>
-
-					</div>
-					<div class ="col-md-6 col-sm-6">
-						<div class = "container">
-							<div class = "row">
-								<div class="col-md-12 col-xs-12">
+								<div class = "col-md-6 col-sm-6">
 									<div class="panel panel-default">
 										<!-- Default panel contents -->
-										<div class="panel-heading">SSH Basics</div>
-										<div class="panel-body" align="justify">
-											<font size="2">Without going deep into technical details, SSH connection consists of the below steps</font>
+										<div class="panel-heading">Client Authentication in SSH</div>
+										<div class="panel-body">
+										<p align = "justify"><font size = "2">	During handshake phase the sides exchange information about SSH protocol version and used cipher suites (combinations of asymmetric encryption, symmetric encryption and hashing algorithms) and compression algorithm (none/ZLib at the moment). Unlike SSL, in SSH the server sends the first data block to the client.First the server and client authenticate themselves to the other side. Server is authenticated using host key. The client is expected to store the key fingerprint somewhere and then validate the key next time (and notify the user if the fingerprint is different from the stored one). X.509 certificate can be used as a host key.  </p>
+																			<p align = "justify"><font size = "2">Client authentication in SSH can be done in one of the following ways:</p></font></p>
 										</div>
 										<!-- Table -->
 										<table class="table" border="0">
 											  <tr>
 												<td align ="left" width ="3%">1</td>
-												<td align ="left"  width ="97%">Handshake</td>
+												<td align ="left"  width ="97%">Public key authentication</td>
 											  </tr>
 											  <tr>
 												<td align ="left">2</td>
-												<td align ="left">Authentication</td>
+												<td align ="left">Password authentication</td>
 											  </tr>
 											  <tr>
 												<td align ="left">3</td>
-												<td align ="left">Data Exchange</td>
+												<td align ="left">Host-based authentication</td>
+											  </tr>
+																				  <tr>
+												<td align ="left">4</td>
+												<td align ="left">Keyboard authentication</td>
 											  </tr>
 										</table>
+										<div class="panel-footer"><font size="2" align="justify">Data exchange is performed if the authentication was successful. For data exchange the client or server creates and manages one or more independent logical connections (data channels).</font>
+										</div>
+									</div>
+
+								</div>
+								<div class ="col-md-6 col-sm-6">
+									<div class = "container">
+										<div class = "row">
+											<div class="col-md-12 col-xs-12">
+												<div class="panel panel-default">
+													<!-- Default panel contents -->
+													<div class="panel-heading">SSH Basics</div>
+													<div class="panel-body" align="justify">
+														<font size="2">Without going deep into technical details, SSH connection consists of the below steps</font>
+													</div>
+													<!-- Table -->
+													<table class="table" border="0">
+														  <tr>
+															<td align ="left" width ="3%">1</td>
+															<td align ="left"  width ="97%">Handshake</td>
+														  </tr>
+														  <tr>
+															<td align ="left">2</td>
+															<td align ="left">Authentication</td>
+														  </tr>
+														  <tr>
+															<td align ="left">3</td>
+															<td align ="left">Data Exchange</td>
+														  </tr>
+													</table>
+												</div>	
+											</div>
+										</div>
+										<div class = "row">   
+											<div class="col-md-12 col-xs-12">
+												<div class="panel panel-default">
+												  <div class="panel-heading">
+													<h3 class="panel-title" align = "justify"><font size = "2">Detailed instruction on how to setup your SSH key with github :SSH setup</font> </h3>
+												  </div>
+												  <div class="panel-body" height ="70">
+													<div class="embed-responsive embed-responsive-4by3">
+													  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ooIPY8WGCYg" allowfullscreen></iframe>		 
+													</div>
+												  </div>
+												</div>
+											</div>
+										</div>		
 									</div>	
 								</div>
 							</div>
-							<div class = "row">   
-								<div class="col-md-12 col-xs-12">
-									<div class="panel panel-default">
-									  <div class="panel-heading">
-										<h3 class="panel-title" align = "justify"><font size = "2">Detailed instruction on how to setup your SSH key with github :SSH setup</font> </h3>
-									  </div>
-									  <div class="panel-body" height ="70">
-										<div class="embed-responsive embed-responsive-4by3">
-										  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ooIPY8WGCYg" allowfullscreen></iframe>		 
-										</div>
-									  </div>
-									</div>
-								</div>
-							</div>		
-						</div>	
+						</div>
 					</div>
 				</div>
 				<div class = "row">
