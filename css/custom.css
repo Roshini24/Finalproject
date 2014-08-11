@@ -1,1 +1,9 @@
 /* this is a custom css style sheet
+p {
+font-style : 2 em;
+align: justify;
+}
+h4 {
+align : center;
+font size : 5 em;
+}

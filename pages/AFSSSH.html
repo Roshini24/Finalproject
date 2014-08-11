@@ -17,15 +17,25 @@
 		
          <link href="../css/bootstrap.min.css" rel="stylesheet">
          <script src="../js/respond.js"></script>
+		 <script src="../js/main.js"></script>
         <script src="../js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
 <html>
 	<body>	
 		<nav class="navbar navbar-inverse" role="navigation">
 		  <div class="container-fluid">
+		    <div class = "col-md-4 col-sm-4">
+			</div>
+		  <div class = "col-md-4 col-sm-4">
 		  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			<h2 style = "color:#E66F38" font = "style: bold">HTML5 BOILERPLATE</h2>
+			<h2 style = "color:#E66F38" font = "style: bold" align = "center">HTML5 BOILERPLATE</h2>
 		</div>
+		</div>
+		<div class = "col-md-4 col-sm-4">
+		 <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/"></div>
+		 </div>
+		</div>
+		
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			  <ul class="nav navbar-nav">
@@ -71,8 +81,8 @@
 							<!-- Default panel contents -->
 							<div class="panel-heading">Rules  of HTML5</div>
 							<div class="panel-body">
-							<p align="justify"><font size="2">	During handshake phase the sides exchange information about SSH protocol version and used cipher suites (combinations of asymmetric encryption, symmetric encryption and hashing algorithms) and compression algorithm (none/ZLib at the moment). Unlike SSL, in SSH the server sends the first data block to the client.First the server and client authenticate themselves to the other side. Server is authenticated using host key. The client is expected to store the key fingerprint somewhere and then validate the key next time (and notify the user if the fingerprint is different from the stored one). X.509 certificate can be used as a host key.  </p>
-																<p align="justify"><font size="2">Client authentication in SSH can be done in one of the following ways:</p></font></p>
+							<p align = "justify"><font size = "2">	During handshake phase the sides exchange information about SSH protocol version and used cipher suites (combinations of asymmetric encryption, symmetric encryption and hashing algorithms) and compression algorithm (none/ZLib at the moment). Unlike SSL, in SSH the server sends the first data block to the client.First the server and client authenticate themselves to the other side. Server is authenticated using host key. The client is expected to store the key fingerprint somewhere and then validate the key next time (and notify the user if the fingerprint is different from the stored one). X.509 certificate can be used as a host key.  </p>
+																<p align = "justify"><font size = "2">>Client authentication in SSH can be done in one of the following ways:</p></font></p>
 							</div>
 							<!-- Table -->
 							<table class="table" border="0">
@@ -126,11 +136,11 @@
 									</div>	
 								</div>
 							</div>
-							<div class = "row">
+							<div class = "row">   
 								<div class="col-md-12 col-xs-12">
 									<div class="panel panel-default">
 									  <div class="panel-heading">
-										<h3 class="panel-title" align="justify"><font size="2">Detailed instruction on how to setup your SSH key with github :SSH setup</font> </h3>
+										<h3 class="panel-title" align = "justify"><font size = "2">Detailed instruction on how to setup your SSH key with github :SSH setup</font> </h3>
 									  </div>
 									  <div class="panel-body" height ="70">
 										<div class="embed-responsive embed-responsive-4by3">
@@ -147,22 +157,34 @@
 					<div class="col-md-12 col-xs-12">
 						<div class="panel panel-default">
 						  <div class="panel-footer">
-							<a href="#"><font size = "1">@ Copyright 2014 Rpp44 , All Rights Reserved </font> </a>&nbsp
-							<a href="#"><font size = "1">Inc.Terms</font> </a>&nbsp
-							<a href="#"><font size = "1">Privacy</font> </a>&nbsp
-							<a href="#"><font size = "1">Security</font> </a>&nbsp
-							<a href="#"><font size = "1">Contact</font> </a>
-						  </div>
+							<div class = "row" border="1">
+								<div class="col-md-4 col-xs-4">					 
+									<a href="#"><font size = "1">@ Copyright 2014 Rpp44 , All Rights Reserved </font> </a>&nbsp
+									 <a href="#"><font size = "1">Privacy</font> </a>&nbsp
+									<a href="#"><font size = "1">Contact</font></a>&nbsp
+								</div>
+								<div class="col-md-2 col-xs-2" align="right" border ="1">
+									 <div class="g-plusone" data-annotation="inline" data-width="25"></div>
+								</div>
+								<div class="col-md-2 col-xs-2" align="left" border ="1">
+									<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="20" data-layout="button" data-action="" data-show-faces="false" data-share="true"></div>
+								</div>
+								<div class="col-md-2 col-xs-2" align="left" border ="1">
+									<a href="https://twitter.com/share" class="twitter-share-button" data-lang="en">Tweet</a>
+								</div>
+								<div class="col-md-2 col-xs-2" align="left" border ="1">
+									<script src="//platform.linkedin.com/in.js" type="text/javascript">
+									  lang: en_US
+									</script>
+									 <script type="IN/Share" data-counter="right"></script>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>	
 			</div>
 		</div>
 
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
@@ -173,5 +195,23 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X');ga('send','pageview');
         </script>
+		<script>(function(d, s, id) {
+ 
+			  var js, fjs = d.getElementsByTagName(s)[0];
+			  if (d.getElementById(id)) return;
+			  js = d.createElement(s); js.id = id;
+			  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+			  fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));</script>
+
+			<script type="text/javascript">
+			  (function() {
+				var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+				po.src = 'https://apis.google.com/js/platform.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+			  })();
+			</script>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
 </body>
 </html>

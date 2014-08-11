@@ -1,4 +1,8 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
 <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -6,14 +10,98 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-       
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
         <link rel="stylesheet" href="../css/normalize.css">
         <link rel="stylesheet" href="../css/main.css">
+		
          <link href="../css/bootstrap.min.css" rel="stylesheet">
          <script src="../js/respond.js"></script>
         <script src="../js/vendor/modernizr-2.6.2.min.js"></script>
-		
-	 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+
+<body>	
+	<nav class="navbar navbar-inverse" role="navigation">
+	  <div class="container-fluid">
+	  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<h2 style = "color:#E66F38" font = "style: bold">HTML5 BOILERPLATE</h2>
+		</div>
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		  <ul class="nav navbar-nav">
+			<li ><a href="homepage.html">Home</a></li>
+			<li><a href="boilerplate.html">Boilerplate</a></li>
+			<li><a href="AFSSSH.html">AFS/SSH</a></li>
+			<li ><a href="Github.html">GitHub</a></li>
+			<li class="active"><a href="contactform.html">Contact</a></li>    
+		  </ul>
+		  <form class="navbar-form navbar-right" role="search">
+			<div class="form-group">
+			  <input type="text" class="form-control" placeholder="Search">
+			</div>
+			<button type="submit" class="btn btn-default">Search</button>
+		  </form>
+		  <ul class="nav navbar-nav navbar-right">
+			<li><a href="#">Welcome User</a></li>
+		  </ul>
+		</div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+	
+	<div class ="jumbotron" style = "background-color: #A0A0A0"  width= "100%" height= "100%">
+		<div class = "container">
+			 <div class="row">
+				<div class="col-md-12 col-xs-12">
+					<div class="panel panel-default">
+					  <div class="panel-heading">
+						<h3 class="panel-title" align ="left"><b>Contact Us :  </b> <font size = "2">Send us your feedback </font></h3>
+					  </div>
+					  <div class="panel-body" height ="100">
+							<table border="0" width="60%" >
+								<thead>
+								  <tr>
+									<th colspan= "4"><font size = "1">Information entered on this page will not be used to send unsolicited email, and will not be sold to a 3rd party </font></th>
+								  </tr>
+								</thead>
+								<tbody>
+									<tr><td>&nbsp;</td><td align="left"><label for="name"> Name</label></td><td align="left"><input id="name" type="text"></td><td>&nbsp;</td></tr> 
+									<tr><td>&nbsp;</td><td align="left"><label for="email">Email</label></td><td align="left"><input id="email" type = "text"></td><td>&nbsp;</td></tr>
+									<tr><td>&nbsp;</td><td align="left"><label for="desc">Subject</label></td><td align="left"><input width="50" id="desc" type="text"> <td>&nbsp;</td> </tr>
+									<tr><td>&nbsp;</td>
+										<td align="left"><label for="name">Message</label></td>
+										<td align="left">
+											<textarea rows="15" cols="50"></textarea>
+										</td><td>&nbsp;</td>
+									</tr>
+									<tr><td>&nbsp;</td><td align="left"></td><td align="left"></td><td>&nbsp;</td> </tr> 
+									<tr>
+										<td>&nbsp;</td>
+										<td> </td>
+										<td  align="left"><a href ="#" class = "btn btn-danger btn-sm">Submit</a> &nbsp;&nbsp;&nbsp;&nbsp;
+											<a href ="#" class = "btn btn-danger btn-sm">Cancel</a></td><td>&nbsp;</td>
+									</tr>										
+								</tbody>
+							</table>
+					  </div>
+					</div>
+				</div>
+			</div>
+			<div class = "row">
+				<div class="col-md-12 col-xs-12">
+					<div class="panel panel-default">
+					  <div class="panel-footer">
+						<a href="#"><font size = "1">@ Copyright 2014 Roshini , All Rights Reserved </font> </a>&nbsp
+						<a href="#"><font size = "1">Inc.Terms</font> </a>&nbsp
+						<a href="#"><font size = "1">Privacy</font> </a>&nbsp
+						<a href="#"><font size = "1">Security</font> </a>&nbsp
+						<a href="#"><font size = "1">Contact</font> </a>
+					  </div>
+					</div>
+				</div>
+			</div>			
+		</div>
+	</div>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
@@ -27,65 +115,5 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X');ga('send','pageview');
         </script>
-</head>
-<html> 
-<body> 
-
-	<nav class="navbar navbar-inverse" role="navigation">
-	  <div class="container-fluid">
-	      <!-- Brand and toggle get grouped for better mobile display -->
-		<div class="navbar-header">
-		  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-			<span class="sr-only">Toggle navigation</span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-		  </button>
-		  <a class="navbar-brand" href="#" background-color = "grey">HTML 5 Boilerplate</a>
-		</div>
-
-	  
-		<!-- Collect the nav links, forms, and other content for toggling -->
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		  <ul class="nav navbar-nav">
-			<li class="active"><a href="homepage.html">Homepage</a></li>
-			<li><a href="boilerplate.html">Boilerplate</a></li>
-			<li><a href="AFSSSH.html">AFS/SSH</a></li>
-			<li><a href="Github.html">GitHub</a></li>
-			<li><a href="contactform.html">Contact</a></li>    
-		  </ul>
-		  <form class="navbar-form navbar-left" role="search">
-			<div class="form-group">
-			  <input type="text" class="form-control" placeholder="Search">
-			</div>
-			<button type="submit" class="btn btn-default">Search</button>
-		  </form>
-		  <ul class="nav navbar-nav navbar-right">
-			<li><a href="#">Welcome User</a></li>
-		  </ul>
-		</div><!-- /.navbar-collapse -->
-	  </div><!-- /.container-fluid -->
-	</nav>
-	
-	<div class="panel panel-default">
-	  <div class="panel-heading">Panel heading without title</div>
-	  <div class="panel-body">
-		<embed width="420" height="345"
-			src="www.youtube.com/watch?v=wmnSyrRBKTw"
-			type="application/x-shockwave-flash">
-	  </div>
-	</div>
-
-	<div class="panel panel-default">
-	  <div class="panel-heading">
-		<h3 class="panel-title">Panel title</h3>
-	  </div>
-	  <div class="panel-body">
-		<div class="embed-responsive embed-responsive-16by9">
-		  <iframe class="embed-responsive-item" src="www.youtube.com/watch?v=wmnSyrRBKTw" allowfullscreen></iframe>		 
-		</div>
-	  </div>
-	</div>
-
-</body> 
+</body>
 </html>
